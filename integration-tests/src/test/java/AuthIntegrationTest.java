@@ -1,0 +1,32 @@
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.notNullValue;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+public class AuthIntegrationTest {
+
+  @BeforeAll
+  public static void setup() {
+    RestAssured.baseURI = "http://localhost:4004";
+  }
+
+  @Test
+  public void test_shouldReturnOK_withValidToken() {
+    String payload = "{\"email\": \"testuser@test.com\", \"password\": \"password123\"}";
+
+    Response response = given()
+        .contentType("application/json")
+        .body(payload)
+        .when()
+        .post("/auth/login")
+        .then()
+        .statusCode(200)
+        .body("token", notNullValue())
+        .extract().response();
+
+    // Validate JSON Response token value
+  }
+}
