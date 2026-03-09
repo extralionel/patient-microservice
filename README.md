@@ -2,7 +2,7 @@
 
 PatientManager is a distributed microservices-based application built with **Java 21** and **Spring Boot 3/4**, designed to manage patient data, authentication, billing, and analytics in a robust, scalable architecture.
 
-![PatientManager Architecture Diagram](https://lh3.googleusercontent.com/gg/AMW1TPoUEPcLq-UjG_j0C1O92NGltJNomtRrD_B9RkpLJ20s5nMpRvDrR7AIB5Yw-AtStILTBseQZs_laV4MnpnEpFx_y0aTNt7BOFTeMSAy-pNxl9Fxtk0-rr8J_cp7tTGC4-IHHWvOTjMMGw7jbSauCgK24Y8IvK414Eo6CrnCvrJYmKa7Lbo-9nLL67c35fF3-Md7JMUqy4PYQDaAhM0UWOR9ALA2-taVHhH-7XT_oW_LDbK2Ee6tf1UkhMg81WDV3jxQLdwaT1n2kMc5Uxqj9yiqDZ9OxHC492F7xrLaEFXaCRZdCHjZItdootEwSOpSG5qrvurIN4nPrANqUB3bvWQ=s1600-rj)
+![PatientManager Architecture Diagram](./architecture.png)
 
 ## Architecture & Microservices
 
